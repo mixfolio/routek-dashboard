@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v4.0.1">
+  <title>Dashboard Template · Bootstrap</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/dashboard/">
+
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+
+
+  <link rel="stylesheet" href="css/dashboard.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="dashboard.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Start navbar -->
+  <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">Routek</a>
+    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse"
+      data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="sidebarMenu">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a href="#" class="nav-link waves-effect">Уведомления</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link waves-effect">Routek Support</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link waves-effect">Полезные ресурсы</a>
+        </li>
+      </ul>
+    </div>
+
+    <ul class="navbar-nav px-3">
+      <li class="nav-item text-nowrap">
+        <a class="nav-link" href="#"><i class="fas fa-sign-out-alt mr-1"></i>Выйти</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- End navbar -->
+
+
+
+  <div class="container-fluid">
+    <div class="row">
+
+      <!-- Start Sidebar -->
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-dark sidebar collapse">
+        <div class="sidebar-sticky pt-3">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <span data-feather="home"></span>
+                Dashboard <span class="sr-only"></span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="onboard.html">
+                <span data-feather="home"></span>
+                Onboarding <span class="sr-only"></span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="file"></span>
+                Orders
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="shopping-cart"></span>
+                Products
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="list-group-item active" href="#">
+                <span data-feather="users"></span>
+                Profile
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="bar-chart-2"></span>
+                Reports
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="layers"></span>
+                Integrations
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- End Sidebar -->
+
+      <!-- Start Main -->
+      <main role="main " class="col-md-9 ml-sm-auto col-lg-10 px-md-4 grey lighten-5">
+        <!-- Card -->
+        <div class="card my-4">
+
+          <!-- Card image -->
+          <div class="view overlay">
+            <img class="card-img-top" src="img/user-wallpaper-lc.jpg" alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+
+          <!-- Card content -->
+          <div class="card-body">
+
+            <!-- Title -->
+            <h4 class="card-title">В. Ю. Алекперов</h4>
+            <!-- Text -->
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+
+          </div>
+
+        </div>
+        <!-- Card -->
+
+
+
+        <!-- Pills navs -->
+      <ul class="nav nav-pills mb-3" id="ex1" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active" id="ex1-tab-1" data-toggle="pill" href="#ex1-pills-1" role="tab"
+            aria-controls="ex1-pills-1" aria-selected="true">Общая информация</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="ex1-tab-2" data-toggle="pill" href="#ex1-pills-2" role="tab"
+            aria-controls="ex1-pills-2" aria-selected="false">Адрес</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="ex1-tab-3" data-toggle="pill" href="#ex1-pills-3" role="tab"
+            aria-controls="ex1-pills-3" aria-selected="false">Реквизиты</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="ex1-tab-4" data-toggle="pill" href="#ex1-pills-4" role="tab"
+            aria-controls="ex1-pills-4" aria-selected="false">Учетная запись</a>
+        </li>
+      </ul>
+      <!-- Pills navs -->
+
+      <!--Start Pills content -->
+      <div class="tab-content" id="ex1-content">
+
+        <div class="tab-pane fade show active" id="ex1-pills-1" role="tabpanel" aria-labelledby="ex1-tab-1">
+
+          <div class="card">
+            <div class="card-body">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputName">ФИО</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="ФИО">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="formSelect">Форма</label>
+                    <select id="formSelect" class="form-control">
+                      <option selected>Choose...</option>
+                      <option>ИП</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-row">
+
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail">E-mail</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Ваш E-mail">
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="inputPhone">Телефон</label>
+                    <input type="tel" class="form-control" id="inputPhone" placeholder="8(495) 123-45-67">
+                  </div>
+
+                </div>
+
+                <div class="form-group">
+                  <label for="inputAbout">О себе</label>
+                  <input type="text" class="form-control" id="inputAbout" placeholder="Описание">
+                </div>
+
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary">Обновить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="tab-pane fade" id="ex1-pills-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title mb-4">Адресная информация</h4>
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputIndex">Индекс</label>
+                    <input type="text" class="form-control" id="inputIndex" placeholder="Индекс">
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="inputStreet">Улица</label>
+                    <input type="text" class="form-control" id="inputStreet" placeholder="Улица">
+                  </div>
+                </div>
+
+                <div class="form-row">
+
+                  <div class="form-group col-md-6">
+                    <label for="inputRegion">Регион/Область</label>
+                    <input type="text" class="form-control" id="inputRegion" placeholder="Регион/Область">
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="inputHouse">Дом</label>
+                    <input type="text" class="form-control" id="inputHouse" placeholder="Дом">
+                  </div>
+
+                </div>
+
+                <div class="form-row">
+
+                  <div class="form-group col-md-6">
+                    <label for="inputCity">Город</label>
+                    <input type="text" class="form-control" id="inputCity" placeholder="Город">
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="inputOffice">Офис</label>
+                    <input type="text" class="form-control" id="inputOffice" placeholder="Офис">
+                  </div>
+
+                </div>
+
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary">Обновить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="ex1-pills-3" role="tabpanel" aria-labelledby="ex1-tab-3">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title mb-4">Реквизиты</h4>
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputINN">ИНН</label>
+                    <input type="text" class="form-control" id="inputINN" placeholder="ИНН">
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="inputBill">Счет</label>
+                    <input type="text" class="form-control" id="inputBill" placeholder="Счет">
+                  </div>
+                </div>
+
+                <div class="form-row">
+
+                  <div class="form-group col-md-6">
+                    <label for="inputKPP">КПП</label>
+                    <input type="text" class="form-control" id="inputKPP" placeholder="КПП">
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="inputKorBill">Кор. счет</label>
+                    <input type="text" class="form-control" id="inputKorBill" placeholder="Кор. счет">
+                  </div>
+
+                </div>
+
+
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputBIK">БИК</label>
+                    <input type="text" class="form-control" id="inputBIK" placeholder="БИК">
+                  </div>
+
+                </div>
+
+
+
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary">Обновить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="tab-pane fade" id="ex1-pills-4" role="tabpanel" aria-labelledby="ex1-tab-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title mb-4">Сменить пароль</h4>
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword">Пароль</label>
+                    <input type="text" class="form-control" id="inputPassword" placeholder="Пароль">
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword2">Подтверждение</label>
+                    <input type="text" class="form-control" id="inputPassword2" placeholder="Подтверждение">
+                  </div>
+                </div>
+
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary">Обновить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!--End Pills content -->
+
+      </main>
+    </div>
+  </div>
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+
+</html>
