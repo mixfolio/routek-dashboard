@@ -3,3 +3,21 @@
    background: #C3DAFF;
    padding: 50px;
 }
+/* .lc-sidebar {
+   position: relative;
+}
+.lc-sidebar:before {
+   position: absolute;
+   content: url(../img/svg/lc-rocket-w-ico.svg);
+   width: 16px;
+   height: 16px;
+   background-color: red;
+} */
+
+.nav-link-lc-active {
+   background: #2780eb;
+}
+
+#sidebarMenu .nav-link:hover {
+   background: #3d3d3d;
+}
