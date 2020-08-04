@@ -50,9 +50,7 @@
 <body>
   <!-- Start navbar -->
   <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-    <a class="navbar-brand col-md-3 col-lg-2 py-0" href="#">
-      <img class="image-fluid" src="img/routek-logo-white.svg" height="64" alt="Компания Routek" loading="lazy">
-    </a>
+    <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">Routek</a>
     <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse"
       data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -81,49 +79,87 @@
 
   <div class="container-fluid">
     <div class="row">
-
-      <!-- Start sidebar -->
       <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-dark sidebar collapse">
         <div class="sidebar-sticky pt-3">
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link" href="profile.html">
-                <div class="d-flex align-items-center">
-                  <img class="mr-3" src="img/lc-user.jpg" height="48" alt="User">
-                  <h6 class="text-light font-weight-normal">В. Ю. Алекперов</h6>
-                </div>
+              <a class="nav-link" href="index.html">
+                <span data-feather="home"></span>
+                Dashboard <span class="sr-only">(current)</span>
               </a>
             </li>
-            
             <li class="nav-item">
-              <a class="nav-link text-light" href="onboard.html">
-                <span class="mr-2"><img src="img/svg/lc-rocket-w-ico.svg" height="28" alt="rocket"></span>
+              <a class="list-group-item active" href="#">
+                <span data-feather="file"></span>
+                Orders
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="onboard.html">
+                <span data-feather="shopping-cart"></span>
                 Onboarding
               </a>
             </li>
-            <li class="nav-item ">
-              <a class="nav-link text-light" href="ask-price.html">
-                <span class="mr-2"><img src="img/svg/price-req-w-ico.svg" height="28" alt="price"></span>
-                Запросы цен
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="users"></span>
+                Customers
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light nav-link-lc-active" href="#">
-                <span class="mr-2"><img src="img/svg/order-lc-w-ico.svg" height="28" alt="orders"></span>
-                Заказы
+              <a class="nav-link" href="#">
+                <span data-feather="bar-chart-2"></span>
+                Reports
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="files.html">
-                <span class="mr-2"><img src="img/svg/lib-lc-w-ico.svg" height="28" alt="library"></span>
-                Библиотека
+              <a class="nav-link" href="#">
+                <span data-feather="layers"></span>
+                Integrations
+              </a>
+            </li>
+          </ul>
+
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+            <span>Saved reports</span>
+            <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
+              <span data-feather="plus-circle"></span>
+            </a>
+          </h6>
+          <ul class="nav flex-column mb-2">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="file-text"></span>
+                Current month
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="file-text"></span>
+                Last quarter
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="file-text"></span>
+                Social engagement
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="file-text"></span>
+                Year-end sale
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span><i class="fas fa-address-book"></i></span>
+                Adress
               </a>
             </li>
           </ul>
         </div>
       </nav>
-
-      <!-- End sidebar -->
 
       <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
         <div
