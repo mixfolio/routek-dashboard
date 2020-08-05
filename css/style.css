@@ -21,3 +21,6 @@
 #sidebarMenu .nav-link:hover {
    background: #3d3d3d;
 }
+.lc-navbar {
+   background-color: green;
+}
