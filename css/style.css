@@ -1,7 +1,22 @@
 .card-carousel {
+   position: relative;
    min-height: 266px;
    background: #C3DAFF;
    padding: 50px;
+}
+
+.carousel-indicators {
+   position: absolute;
+   bottom: -50px;
+   left: 0;
+}
+
+.carousel-text {
+   margin-left: 30%;
+}
+
+.carousel-item {
+   background: url(../img/onbrd-slider-01.png) left center no-repeat;
 }
 /* .lc-sidebar {
    position: relative;
@@ -23,4 +38,39 @@
 }
 .lc-navbar {
    background-color: green;
+}
+
+
+/* .btn-outline-secondary {
+   border: 2px solid #00d2a0 !important;
+   color: #00d2a0 !important;
+}
+
+.btn-outline-secondary:hover {
+   border: 2px solid #00d2a0 !important;
+   color: #00d2a0 !important;
+} */
+
+.user-avatar {
+   position: absolute;
+   bottom: 0;
+   left: 20px;
+   
+}
+
+.user-title {
+   margin-left: 200px;
+}
+
+@media (max-width: 576px) {
+   .user-avatar {
+      height: 96px;
+      width: 96px;
+      bottom: 24px;
+   }
+
+   .user-title {
+      margin-left: 100px;
+      font-size: 18px;
+   }
 }

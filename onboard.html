@@ -192,11 +192,11 @@
         <div class="row wow fadeInUp">
           <!-- Start 3 Cards -->
           <div class="col-lg-4 mb-4">
-            <div class="card">
+            <div class="card h-100">
               <div class="card-body text-center">
-                <h5 class="card-title ">Добро пожаловать на Routek.tech!</h5>
+                <h5 class="card-title">Добро пожаловать на Routek.tech!</h5>
                 <p class="card-text">
-                  Пожалуйста, заполните свой профиль. Это поможет нам сделать сервис более удобным для вас!
+                  Пожалуйста, заполните свой профиль. Это поможет нам сделать сервис более удобным для вас! <br> 
                 </p>
                 <img class="d-block mx-auto mb-2" src="img/advise-lc-01.png" alt="advice">
                 <button type="button" class="btn btn-primary">Заполнить</button>
@@ -205,7 +205,7 @@
           </div>
 
           <div class="col-lg-4 mb-4">
-            <div class="card">
+            <div class="card h-100">
               <div class="card-body text-center">
                 <h5 class="card-title ">Всегда актуальный статус</h5>
                 <p class="card-text">
@@ -213,21 +213,21 @@
                   И так же легко возвращайтесь обратно!
                 </p>
                 <img class="d-block mx-auto mb-2" src="img/advise-lc-02.png" alt="advice">
-                <button type="button" class="btn btn-primary">Понятно</button>
+                <button type="button" class="btn btn-primary">Начать!</button>
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 mb-4">
-            <div class="card">
+            <div class="card h-100">
               <div class="card-body text-center">
                 <h5 class="card-title ">Полезные ресурсы для Вас!</h5>
                 <p class="card-text">
                   Посетить раздел FAQ, прочитать советы в базе знаний или ознакомиться с правовой информацией – все
-                  доступно в меню <a href="#">«Полезные ресурсы»</a>.
+                  доступно в меню <a class="text-uppercase" href="#">«Полезные ресурсы»</a>.
                 </p>
                 <img class="d-block mx-auto mb-2" src="img/advise-lc-03.png" alt="advice">
-                <button type="button" class="btn btn-primary">Заполнить</button>
+                <button type="button" class="btn btn-primary">Теперь я знаю!</button>
               </div>
             </div>
           </div>
@@ -246,26 +246,21 @@
             </ol>
             <div class="carousel-inner">
 
-              <div class="carousel-item active">
+              <div class="carousel-item carousel-item-01 active">
                 <div class="card-body">
-                  <div class="div">
-                    <h3 class="card-title">Делайте заказы быстро и удобно!</h3>
-                    <p>Загрузите модель, заполните параметры и отправьте запрос на расчет цены! Оплачивайте
-                      понравившееся предложение и
-                      получайте детали!</p>
-
-                  </div>
-
-                  <div class="text-center">
-                    <a href="#" class="btn btn-primary btn-lg">Сделать заказ</a>
-                  </div>
+                  <h3 class="card-title carousel-text">Делайте заказы быстро и удобно!</h3>
+                  <p class="carousel-text">Загрузите модель, заполните параметры и отправьте запрос на расчет цены! Оплачивайте
+                      понравившееся предложение и получайте детали!</p>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="btn btn-primary btn-lg">Сделать заказ</a>
                 </div>
               </div>
 
               <div class="carousel-item">
                 <div class="card-body">
-                  <h3 class="card-title">Удобное управление текущими заказами.</h3>
-                  <p>Отслеживайте все этапы исполнения заказа на платформе или в удобном мобильном приложении. Оставьте
+                  <h3 class="card-title carousel-text">Удобное управление текущими заказами.</h3>
+                  <p class="carousel-text">Отслеживайте все этапы исполнения заказа на платформе или в удобном мобильном приложении. Оставьте
                     рутину нам, а сами займитесь воплощением своих идей!</p>
                   <div class="text-center">
                     <a href="#" class="btn btn-primary btn-lg">Сделать заказ</a>
@@ -275,8 +270,8 @@
 
               <div class="carousel-item">
                 <div class="card-body">
-                  <h3 class="card-title">Полезная аналитика по выполненным заказам.</h3>
-                  <p>Платформа хранит всю историю ваших заказов. Вы можете быстро и легко сформировать отчет по заданным
+                  <h3 class="card-title carousel-text">Полезная аналитика по выполненным заказам.</h3>
+                  <p class="carousel-text">Платформа хранит всю историю ваших заказов. Вы можете быстро и легко сформировать отчет по заданным
                     критериям или рассчитать ROI от использования вами платформы Routek!</p>
                   <div class="text-center">
                     <a href="#" class="btn btn-primary btn-lg">Сделать заказ</a>
@@ -344,9 +339,13 @@
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Your custom scripts (optional) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
 
-  <script src="js/dashboard.js"></script>
+  </script>
+
+  <!-- <script src="js/dashboard.js"></script> -->
 </body>
 
 </html>
