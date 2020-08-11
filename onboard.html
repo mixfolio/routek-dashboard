@@ -39,22 +39,49 @@
     </button>
 
     <ul class="nav">
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link text-light" href="#">Уведомления</a>
+      </li> -->
+      <li class="nav-item">
+        <a class="nav-link" href="#">Routek Support</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-light" href="#">Routek Support</a>
+        <a class="nav-link" href="#">Resources menu</a>
       </li>
+      
       <li class="nav-item">
-        <a class="nav-link text-light" href="#">Resources menu</a>
+        <a class="nav-link" href="#">
+          
+          <i class="fas fa-bell" alt='Notifications'></i>
+          <span id="navbarNotificationCounter" class="badge badge-pill red z-depth-1 ml-n1" >12</span>
+        </a>
       </li>
-    </ul>
-    
-    <ul class="navbar-nav px-3">
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle" id="lang-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">RU</a>
+        <div class="dropdown-menu dropdown-primary" aria-labelledby="lang-versions">
+          <a href="#" class="dropdown-item">EN</a>
+          <a href="#" class="dropdown-item">DE</a>
+          <a href="#" class="dropdown-item">FR</a>
+        </div>
+      </li>
       <li class="nav-item text-nowrap">
         <a class="nav-link" href="#"><i class="fas fa-sign-out-alt mr-1"></i>Выйти</a>
       </li>
     </ul>
+    
+    <!-- <ul class="nav px-3">
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-item nav-link dropdown-toggle" id="lang-versions" data-toggle="dropdown">RU</a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item">EN</a>
+          <a href="#" class="dropdown-item">DE</a>
+          <a href="#" class="dropdown-item">FR</a>
+        </div>
+      </li>
+      <li class="nav-item text-nowrap">
+        <a class="nav-link" href="#"><i class="fas fa-sign-out-alt mr-1"></i>Выйти</a>
+      </li>
+    </ul> -->
   </nav>
 
   <div class="container-fluid">
@@ -76,8 +103,7 @@
             
             <li class="nav-item">
               <a class="nav-link text-light nav-link-lc-active" href="#">
-                <!-- <span class="lc-sidebar lc-sidebar--mod1"></span> -->
-                <!-- <i class="fas fa-rocket mr-1"></i> -->
+                
                 <span class="mr-2"><img src="img/svg/lc-rocket-w-ico.svg" height="28" alt="rocket"></span>
                 Onboarding
               </a>
@@ -101,45 +127,6 @@
               </a>
             </li>
           </ul>
-
-          <!-- <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-            <span>Saved reports</span>
-            <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
-              <span data-feather="plus-circle"></span>
-            </a>
-          </h6>
-          <ul class="nav flex-column mb-2">
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="file-text"></span>
-                Current month
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="file-text"></span>
-                Last quarter
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="file-text"></span>
-                Social engagement
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="file-text"></span>
-                Year-end sale
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="orders-routek.html">
-                <span><i class="fas fa-address-book"></i></span>
-                Adress
-              </a>
-            </li>
-          </ul> -->
         </div>
       </nav>
 
@@ -169,7 +156,7 @@
                   Пожалуйста, заполните свой профиль. Это поможет нам сделать сервис более удобным для вас! <br> 
                 </p>
                 <img class="d-block mx-auto mb-2" src="img/advise-lc-01.png" alt="advice">
-                <div class="mt-auto"><a href="#" class="btn btn-primary">Заполнить</a></div>
+                <div class="mt-auto"><a href="#" class="btn btn-block btn-primary" style="max-width: 200px;">Заполнить</a></div>
               </div>
             </div>
           </div>
@@ -183,7 +170,7 @@
                   И так же легко возвращайтесь обратно!
                 </p>
                 <img class="d-block mx-auto mb-2" src="img/advise-lc-02.png" alt="advice">
-                <div class="mt-auto"><a href="#" class="btn btn-primary">Начать!</a></div>
+                <div class="mt-auto"><a href="#" class="btn btn-block btn-primary" style="max-width: 200px;">Начать!</a></div>
               </div>
             </div>
           </div>
@@ -197,7 +184,7 @@
                   доступно в меню <a class="text-uppercase" href="#">«Полезные ресурсы»</a>.
                 </p>
                 <img class="d-block mx-auto mb-2" src="img/advise-lc-03.png" alt="advice">
-                <div class="mt-auto"><a href="#" class="btn btn-primary">Теперь я знаю!</a></div>
+                <div class="mt-auto"><a href="#" class="btn btn-block btn-primary" style="max-width: 200px;">Теперь я знаю!</a></div>
               </div>
             </div>
           </div>
@@ -275,7 +262,7 @@
                   Сделайте первый заказ и получите скидку 10%!
                 </p>
 
-                <button type="button" class="btn btn-primary">Сделать заказ</button>
+                <button type="button" class="btn btn-block btn-primary mx-auto" style="max-width: 200px;">Сделать заказ</button>
               </div>
             </div>
           </div>
@@ -290,7 +277,7 @@
                   Планируйте свои события и мы напомним вам о них!
                 </p>
 
-                <button type="button" class="btn btn-primary">Создать</button>
+                <button type="button" class="btn btn-block btn-primary mx-auto" style="max-width: 200px;">Создать</button>
               </div>
             </div>
           </div>
