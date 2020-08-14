@@ -11,6 +11,10 @@
    left: 0;
 }
 
+.carousel-indicators .active {
+   background-color: #2780eb;
+}
+
 .carousel-text {
    margin-left: 30%;
 }
@@ -102,3 +106,9 @@
 /* .form-signin a {
    color: #2780eb;
 } */
+
+.btn-prof-wall {
+   position: absolute;
+   top: 0;
+   right: 0;
+}

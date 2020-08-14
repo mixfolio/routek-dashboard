@@ -70,25 +70,6 @@
       </li>
     </ul>
 
-    <!-- <div class="collapse navbar-collapse" id="sidebarMenu">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a href="#" class="nav-link waves-effect">Уведомления</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link waves-effect">Routek Support</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link waves-effect">Полезные ресурсы</a>
-        </li>
-      </ul>
-    </div> -->
-
-    <!-- <ul class="navbar-nav px-3">
-      <li class="nav-item text-nowrap">
-        <a class="nav-link" href="#"><i class="fas fa-sign-out-alt mr-1"></i>Выйти</a>
-      </li>
-    </ul> -->
   </nav>
   <!-- End navbar -->
 
@@ -104,7 +85,7 @@
             <li class="nav-item">
               <a class="nav-link nav-link-lc-active" href="#">
                 <div class="d-flex align-items-center">
-                  <img class="mr-3" src="img/lc-user.jpg" height="48" alt="User">
+                  <img class="mr-3" src="img/luk-oil-logo.jpg" height="48" alt="User">
                   <h6 class="text-light font-weight-normal">В. Ю. Алекперов</h6>
                 </div>
                 
@@ -114,8 +95,6 @@
             
             <li class="nav-item">
               <a class="nav-link text-light" href="onboard.html">
-                <!-- <span class="lc-sidebar lc-sidebar--mod1"></span> -->
-                <!-- <i class="fas fa-rocket mr-1"></i> -->
                 <span class="mr-2"><img src="img/svg/lc-rocket-w-ico.svg" height="28" alt="rocket"></span>
                 Onboarding
               </a>
@@ -158,9 +137,10 @@
 
           <!-- Card content -->
           <div class="card-body">
+            <button class="btn btn-sm btn-primary btn-prof-wall">Загрузить обложку</button>
 
             <!-- Title -->
-            <img class="rounded-circle img-thumbnail shadow-sm user-avatar" width="168" height="168" src="img/lc-user.jpg" alt="">
+            <img class="rounded-circle img-thumbnail shadow-sm user-avatar" width="168" height="168" src="img/luk-oil-logo.jpg" alt="">
             <h4 class="card-title user-title">В. Ю. Алекперов</h4>
             
           </div>
@@ -174,7 +154,7 @@
       <ul class="nav nav-pills mb-3" id="ex1" role="tablist">
         <li class="nav-item" role="presentation">
           <a class="nav-link active" id="ex1-tab-1" data-toggle="pill" href="#ex1-pills-1" role="tab"
-            aria-controls="ex1-pills-1" aria-selected="true">Профиль сотрудника</a>
+            aria-controls="ex1-pills-1" aria-selected="true">Профиль</a>
         </li>
         <li class="nav-item" role="presentation">
           <a class="nav-link" id="ex1-tab-2" data-toggle="pill" href="#ex1-pills-2" role="tab"
@@ -184,13 +164,13 @@
           <a class="nav-link" id="ex1-tab-3" data-toggle="pill" href="#ex1-pills-3" role="tab"
             aria-controls="ex1-pills-3" aria-selected="false">Реквизиты</a>
         </li>
-        <li class="nav-item" role="presentation">
+        <!-- <li class="nav-item" role="presentation">
           <a class="nav-link" id="ex1-tab-4" data-toggle="pill" href="#ex1-pills-4" role="tab"
             aria-controls="ex1-pills-4" aria-selected="false">Профиль организации</a>
-        </li>
+        </li> -->
         <li class="nav-item" role="presentation">
-          <a class="nav-link" id="ex1-tab-5" data-toggle="pill" href="#ex1-pills-5" role="tab"
-            aria-controls="ex1-pills-5" aria-selected="false">Учетная запись</a>
+          <a class="nav-link" id="ex1-tab-4" data-toggle="pill" href="#ex1-pills-4" role="tab"
+            aria-controls="ex1-pills-4" aria-selected="false">Учетная запись</a>
         </li>
       </ul>
       <!-- Pills navs -->
@@ -200,47 +180,94 @@
       
         <!-- Start tab 1 -->
         <div class="tab-pane fade show active" id="ex1-pills-1" role="tabpanel" aria-labelledby="ex1-tab-1">
-          <div class="card">
+          <div class="card mb-3">
             <div class="card-body">
               <form>
                 <div class="form-row">
                   <div class="form-group col-12">
-                    <img class="rounded-lg mr-2 mb-2" width="96" height="96" src="img/lc-user.jpg" alt="User-photo">
-                    <button class="btn btn-sm grey lighten-2 ml-0">Загрузить фото</button>
+                    <img class="rounded-lg mr-2 mb-2" width="96" height="96" src="img/luk-oil-logo.jpg" alt="User-photo">
+                    <button class="btn btn-sm btn-outline-primary ml-0">Загрузить логотип</button>
                   </div>
-                  <div class="form-group col-md-6">
-                    <label for="inputName">ФИО</label>
-                    <input type="text" class="form-control" id="inputName" placeholder="ФИО">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="formSelect">Форма</label>
+                      <select id="formSelect" class="browser-default custom-select">
+                        <option selected>Юр. лицо</option>
+                        <option >Физ. лицо</option>
+                        
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="inputName">Название</label>
+                      <input type="text" class="form-control" id="inputName" placeholder="Название организации">
+                    </div>
+
+                    <div class="form-group">
+                      <label for="inputPhone">Телефон</label>
+                      <input type="tel" class="form-control" id="inputPhone" placeholder="8(495) 123-45-67">
+                    </div>
+
+                    <div class="form-group">
+                      <label for="inputEmail">E-mail</label>
+                      <input type="email" class="form-control" id="inputEmail" placeholder="Ваш E-mail">
+                    </div>
                   </div>
-                  <div class="form-group col-md-6">
-                    <label for="formSelect">Форма</label>
-                    <select id="formSelect" class="browser-default custom-select">
-                      <option selected>Физ. лицо</option>
-                      <option>Юр. лицо</option>
-                      <option>ИП</option>
-                    </select>
+
+                  <div class="col-md-6">
+  
+                    <div class="form-group">
+                      <label for="inputPhone">Краткое описание</label>
+                      <input type="text" class="form-control" id="inputPhone" placeholder="Краткое описание">
+                    </div>
+                    <div class="form-group">
+                      <label for="company-desc">Описание</label>
+                      <textarea class="form-control" name="desc" id="company-desc" rows="8"></textarea>
+                    </div>
                   </div>
                 </div>
       
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary">Обновить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+
+          <div class="card mb-3">
+            
+            <div class="card-body">
+              <h4 class="card-title mb-4">Профиль заказчика</h4>
+              <form>
                 <div class="form-row">
-      
-                  <div class="form-group col-md-6">
-                    <label for="inputEmail">E-mail</label>
-                    <input type="email" class="form-control" id="inputEmail" placeholder="Ваш E-mail">
+                  
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="inputName">ФИО</label>
+                      <input type="text" class="form-control" id="inputName" placeholder="ФИО">
+                    </div>
+
+                  
+                    <div class="form-group">
+                      <label for="inputPhone">Телефон</label>
+                      <input type="tel" class="form-control" id="inputPhone" placeholder="8(495) 123-45-67">
+                    </div>
                   </div>
-      
-                  <div class="form-group col-md-6">
-                    <label for="inputPhone">Телефон</label>
-                    <input type="tel" class="form-control" id="inputPhone" placeholder="8(495) 123-45-67">
+
+                  <div class="col-md-6">
+                    
+
+                    <div class="form-group">
+                      <label for="inputEmail">E-mail</label>
+                      <input type="email" class="form-control" id="inputEmail" placeholder="Ваш E-mail">
+                    </div>
+
+                    
                   </div>
-      
+
                 </div>
-      
-                <div class="form-group">
-                  <label for="inputAbout">О себе</label>
-                  <input type="text" class="form-control" id="inputAbout" placeholder="Описание">
-                </div>
-      
+
                 <div class="text-center">
                   <button type="submit" class="btn btn-primary">Обновить</button>
                 </div>
@@ -356,7 +383,7 @@
         <!-- End tab 3 -->
       
         <!-- Start tab 4 -->
-        <div class="tab-pane fade" id="ex1-pills-4" role="tabpanel" aria-labelledby="ex1-tab-4">
+        <!-- <div class="tab-pane fade" id="ex1-pills-4" role="tabpanel" aria-labelledby="ex1-tab-4">
           <div class="card">
             <div class="card-body">
               <form>
@@ -405,11 +432,11 @@
             </div>
           </div>
       
-        </div>
+        </div> -->
         <!-- End tab 4 -->
       
-        <!-- Start tab 5 -->
-        <div class="tab-pane fade" id="ex1-pills-5" role="tabpanel" aria-labelledby="ex1-tab-5">
+        <!-- Start tab 4 -->
+        <div class="tab-pane fade" id="ex1-pills-4" role="tabpanel" aria-labelledby="ex1-tab-4">
           <div class="card">
             <div class="card-body">
               <h4 class="card-title mb-4">Сменить пароль</h4>
@@ -433,7 +460,7 @@
             </div>
           </div>
         </div>
-        <!-- End tab 5 -->
+        <!-- End tab 4 -->
       
       </div>
       <!--End Pills content -->
