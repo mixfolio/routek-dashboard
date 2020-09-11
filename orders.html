@@ -139,9 +139,9 @@
       <!-- End sidebar -->
 
       <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
-        <div
-          class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
           <h1 class="h2">Заказы</h1>
+          
           <div class="form-row">
             <div class="form-group col-6">
               <label for="formSelect">Тип</label>
@@ -159,6 +159,70 @@
                 <option>Все</option>
               </select>
             </div>
+          </div>
+        </div>
+        <!-- <div class="d-flex text-center flex-wrap">
+          <div class="order-stat-card">
+            <p class="mb-auto">Новый</p>
+            <div class="btn-order-full">1</div>
+            <p>2020-09-09</p>
+          </div>
+          <div class="order-stat-card"><p class="mb-auto">Поиск исполнителя</p><span class="btn-order-full">2</span><p>2020-09-09</p></div>
+          <div class="order-stat-card"><p class="mb-auto">Исполнитель определен. Ожидание выплаты</p><span class="btn-order-full">3</span><p>2020-09-09</p></div>
+          <div class="order-stat-card"><p class="mb-auto">Оплачен</p><span class="btn-order-full">4</span><p>2020-09-09</p></div>
+          <div class="order-stat-card"><p class="mb-auto">В работе</p><span class="btn-order-full btn-order-out">5</span><p>2020-09-09</p></div>
+          <div class="order-stat-card"><p class="mb-auto">Готов. Передача в службу доставки</p><span class="btn-order-full btn-order-out">6</span><p>2020-09-09</p></div>
+          <div class="order-stat-card"><p class="mb-auto">Доставка</p><span class="btn-order-full btn-order-out">7</span><p>2020-09-09</p></div>
+          <div class="order-stat-card"><p class="mb-auto">Доставлен</p><span class="btn-order-full btn-order-out">8</span><p>2020-09-09</p></div>
+          
+        </div> -->
+
+        <div class="row">
+          <div class="col-lg-12 align-center overflow-auto">
+            <ul id="stepProgressBar">
+          
+              <li class="step">
+                <p class="step-text">Новый</p>
+                <div class="bullet completed">1</div>
+                <p class="step-subtext">2020-09-10</p>
+              </li>
+              <li class="step">
+                <p class="step-text">Поиск исполнителя</p>
+                <div class="bullet completed">2</div>
+                <p class="step-subtext">2020-09-11</p>
+              </li>
+              <li class="step">
+                <p class="step-text">Исполнитель определен. Ожидание оплаты.</p>
+                <div class="bullet completed">3</div>
+                <p class="step-subtext">2020-09-12</p>
+              </li>
+              <li class="step">
+                <p class="step-text">Оплачен</p>
+                <div class="bullet completed">4</div>
+                <p class="step-subtext">2020-09-13</p>
+              </li>
+              <li class="step">
+                <p class="step-text">В работе</p>
+                <div class="bullet completed">5</div>
+                <p class="step-subtext">2020-09-14</p>
+              </li>
+              <li class="step">
+                <p class="step-text">Готов, передача в службу доставки</p>
+                <div class="bullet completed">6</div>
+                <p class="step-subtext">2020-09-15</p>
+              </li>
+              <li class="step">
+                <p class="step-text">Доставка</p>
+                <div class="bullet completed">7</div>
+                <p class="step-subtext">2020-09-16</p>
+              </li>
+              <li class="step">
+                <p class="step-text">Доставлен</p>
+                <div id="bullet" class="bullet completed">8</div>
+                <p class="step-subtext">2020-09-17</p>
+              </li>
+          
+            </ul>
           </div>
         </div>
 
@@ -395,9 +459,6 @@
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Your custom scripts (optional) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
-  <script src="js/dashboard.js"></script>
 </body>
 
 </html>
