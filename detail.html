@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Routek Запросы цен</title>
+
+  <!-- Routek icon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+
+
+  <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body class="grey lighten-4">
+
+  <!-- Start navbar -->
+  <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-md-3 col-lg-2 py-0" href="#">
+      <img class="image-fluid" src="img/routek-logo-white.svg" height="64" alt="Компания Routek" loading="lazy">
+    </a>
+    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse"
+      data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <ul class="nav mx-3">
+      <!-- <li class="nav-item">
+        <a class="nav-link text-light" href="#">Уведомления</a>
+      </li> -->
+      <li class="nav-item">
+        <a class="nav-link" href="#">Routek Support</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Resources menu</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          
+          <i class="fas fa-bell" alt='Notifications'></i>
+          <span id="navbarNotificationCounter" class="badge badge-pill red z-depth-1 ml-n1" >12</span>
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle" id="lang-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">RU</a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="lang-versions">
+          <a href="#" class="dropdown-item">EN</a>
+          <a href="#" class="dropdown-item">DE</a>
+          <a href="#" class="dropdown-item">FR</a>
+        </div>
+      </li>
+      <li class="nav-item text-nowrap">
+        <a class="nav-link" href="#"><i class="fas fa-sign-out-alt mr-1"></i>Выйти</a>
+      </li>
+    </ul>
+
+    <!-- <ul class="navbar-nav px-3">
+      <li class="nav-item text-nowrap">
+        <a class="nav-link" href="#"><i class="fas fa-sign-out-alt mr-1"></i>Выйти</a>
+      </li>
+    </ul> -->
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Start sidebar -->
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-dark sidebar collapse">
+        <div class="sidebar-sticky pt-3">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html">
+                <div class="d-flex align-items-center">
+                  <img class="mr-3" src="img/luk-oil-logo.jpg" height="48" alt="User">
+                  <h6 class="text-light font-weight-normal">В. Ю. Алекперов</h6>
+                </div>
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link text-light" href="onboard.html">
+                <span class="mr-2"><img src="img/svg/lc-rocket-w-ico.svg" height="28" alt="rocket"></span>
+                Onboarding
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link text-light nav-link-lc-active" href="#">
+                <span class="mr-2"><img src="img/svg/price-req-w-ico.svg" height="28" alt="price"></span>
+                Запросы цен
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="orders.html">
+                <span class="mr-2"><img src="img/svg/order-lc-w-ico.svg" height="28" alt="orders"></span>
+                Заказы
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="files.html">
+                <span class="mr-2"><img src="img/svg/lib-lc-w-ico.svg" height="28" alt="library"></span>
+                Библиотека
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- End sidebar -->
+
+
+      <!-- Start main-page -->
+
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+
+        
+
+        <div class="container-fluid mt-3">
+          
+            <form class="row bg-white mb-3 p-3 rounded-lg">
+              <div class="col-12">
+                <h4 class="font-weight-normal my-4">Загрузите модели и введите параметры заказа</h4>
+              </div>
+              
+              <div class="col-lg-6">
+                <div class="row">
+                  <div class="col-lg-12 mb-3">
+                    <label class="form-label h6" for="detail-input1">Загруженные модели</label>
+                    <input class="form-control" id="detail-input1" type="text">
+                  </div>
+                  
+                  <div class="col-12 mb-3">
+                    <img style="width: 100%;" class="" src="img/detail.jpg" alt="detail-plhr">
+                  </div>
+                </div>
+                
+              </div>
+              
+              <div class="col-lg-6">
+                <div class="row">
+                  <div class="col-12 mb-3">
+                    <label class="form-label h6" for="detail-input3">Технология</label>
+                    <input class="form-control" id="detail-input3" type="text">
+                  </div>
+                  <div class="col-12 mb-3">
+                    <label class="form-label h6" for="detail-input4">Материал</label>
+                    <input class="form-control" id="detail-input4" type="text">
+                  </div>
+                  <div class="col-sm-6 mb-3">
+                    <label class="form-label h6" for="detail-input5">Цвет</label>
+                    <input class="form-control" id="detail-input5" type="text">
+                  </div>
+                  <div class="col-sm-6 mb-3">
+                    <label class="form-label h6" for="detail-input6">Количество</label>
+                    <input class="form-control" id="detail-input6" type="text">
+                  </div>
+                  <div class="col-sm-6 mb-3">
+                    <label class="form-label h6" for="detail-input7">Заполнение</label>
+                    <input class="form-control" id="detail-input7" type="text">
+                  </div>
+                  <div class="col-sm-6 mb-3">
+                    <label class="form-label h6" for="detail-input8">Качество</label>
+                    <input class="form-control" id="detail-input8" type="text">
+                  </div>
+                  <div class="col-4 mb-3">
+                    <label class="form-label h6" for="detail-input9">Габариты (мм)</label>
+                    <input class="form-control" id="detail-input9" type="text">
+                  </div>
+                  <div class="col-4 mb-3">
+                    <label class="form-label h6 invisible" for="detail-input10">Габариты (мм)</label>
+                    <input class="form-control" id="detail-input10" type="text">
+                  </div>
+                  <div class="col-4 mb-3">
+                    <label class="form-label h6 invisible" for="detail-input11">Габариты (мм)</label>
+                    <input class="form-control" id="detail-input11" type="text">
+                  </div>
+                  <div class="col-md-12 mb-3">
+                    <label class="form-label h6" for="detail-input12">Объем (мм3)</label>
+                    <input class="form-control" id="detail-input12" type="text">
+                  </div>
+                  <div class="col-lg-12 mb-3">
+                    <label class="form-label h6" for="inputDetComment">Комментарии</label>
+                    <textarea class="form-control" id="inputDetComment" type="text" rows="4"></textarea>
+                
+                  </div>
+                </div>
+              </div>
+              
+                <button type="submit" class="btn btn-primary mx-auto my-4">Сделать заказ</button>
+              
+              
+            </form>
+        </div>
+
+      </main>
+    </div>
+  </div>
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+
+
+  <script src="js/dashboard.js"></script>
+</body>
+
+</html>

@@ -5,6 +5,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Добро пожаловать на борт Роутек">
+  <meta property="og:description" content="Здесь вы познакомитесь с сайтом компании Роутек и сможете делать заказы по 3D печати">
+  <meta property="og:image" content="https://mixfolio.github.io/routek-dashboard/img/logo-routek_sm.jpg">
+  <meta property="og:url" content="http://routek.tech">
+  <meta property="og:site_name" content="Routek">
+
+  <meta property="twitter:image" content="https://mixfolio.github.io/routek-dashboard/img/logo-routek.jpg">
+
+
   <title>Routek Onboarding</title>
 
 
@@ -21,8 +32,7 @@
 
 
   <link rel="stylesheet" href="css/dashboard.css">
-  <!-- Your custom styles (optional) -->
-  <link rel="stylesheet" href="css/style.css">
+
 
 </head>
 
@@ -50,7 +60,7 @@
       </li>
 
       <li class="nav-item">
-        <a href="#" class="nav-link " id="notifications" data-toggle="dropdown" aria-haspopup="true>
+        <a href="#" class="nav-link " id="notifications" data-toggle="dropdown" >
 
           <i class="fas fa-bell" alt='Notifications'></i>
           <span id="navbarNotificationCounter" class="badge badge-pill red z-depth-1 ml-n1">12</span>
@@ -204,7 +214,7 @@
 
         <!-- Start Carousel -->
         <div class="card card-carousel mb-4">
-          <div id="carouselOnboard-1" class="carousel slide" data-ride="carousel">
+          <div id="carouselOnboard-1" class="carousel slide" data-ride="carousel" style="background: #C3DAFF;">
             <ol class="carousel-indicators">
               <li data-target="#carouselOnboard-1" data-slide-to="0" class="active"></li>
               <li data-target="#carouselOnboard-1" data-slide-to="1"></li>
@@ -339,10 +349,40 @@
           </div>
         </div>
         <!-- End row-2 -->
-       
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#onboardModal" >
+          Launch demo modal
+        </button>
       </main>
     </div>
   </div>
+  
+  
+
+  <div class="modal"  id="onboardModal" tabindex="-1" aria-labelledby="onboardModalLabel" aria-hidden="true"">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        
+        <div class="modal-body text-center">
+          <div class="modal-header" style="border-bottom: none">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <h6 class="font-weight-normal mb-3">Наша команда старается сделать приложение максимально удобным для вас</h6>
+          <img class="img-fluid" src="img/progress__monochromatic.svg" alt="team-working">
+          <h6 class="font-weight-bold my-3">Вам нравится пользоваться приложением?</h6>
+
+          <div class="d-flex justify-content-center flex-wrap">
+            <button type="button" class="btn btn-grey" data-dismiss="modal">Не нравится</button>
+            <button type="button" class="btn btn-primary">Нравится</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
   <!-- jQuery -->
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <!-- Bootstrap tooltips -->
@@ -355,6 +395,22 @@
   <script src="js/wow.min.js"></script>
   <script>
     new WOW().init();
+
+    // Modal
+    function openModal() {
+      const modal = document.querySelector('#onboardModal');
+      modal.classList.add('show');
+      modal.style.display = 'block';
+      modal.style.backgroundColor = 'rgba(0,0,0,0.5)';
+    }
+    const closeModal = document.querySelector('.close');
+    closeModal.addEventListener("click", () =>{
+      const modal = document.querySelector('#onboardModal');
+      modal.classList.remove('show');
+      modal.style.display = 'none';
+    })
+
+    const modalTimerId = setTimeout(openModal, 2000);
 
   </script>
 
